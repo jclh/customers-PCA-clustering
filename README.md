@@ -11,7 +11,7 @@
 
 This project is part of a [Udacity](https://www.udacity.com/) program: [Data Science degree, Project 3](https://github.com/udacity/DSND_Term1)
 
-The objective of this project is to apply unsupervised learning techniques to identify segments of the population that form the core customer base for a mail-order sales company in Germany. These segments can then be used to deploy direct marketing campaigns towards audiences that will have the highest expected rate of return. The data was provided by Udacity's partners at Bertelsmann [Arvato Analytics](https://www.arvato.com/in-en/about.html).
+The objective of the project is to apply unsupervised learning techniques to identify segments of the population that form the core customer base for a mail-order sales company in Germany. These segments can then be used to deploy direct marketing campaigns towards audiences that will have the highest expected rate of return. The data was provided by Udacity's partners at Bertelsmann [Arvato Analytics](https://www.arvato.com/in-en/about.html).
 
 Main files in the repository:
 
@@ -27,7 +27,7 @@ Identify segments of the population, based on historical customer data, that for
 
 Apply unsupervised learning tools included in [`scikit-learn`](https://scikit-learn.org/stable/) for dimensionality reduction and clustering:
 - [Principal component analysis (PCA)](https://scikit-learn.org/stable/modules/decomposition.html#decompositions)
-- [$K$-means](https://scikit-learn.org/stable/modules/clustering.html#k-means)
+- [K-means](https://scikit-learn.org/stable/modules/clustering.html#k-means)
 
 
 ## Use Jupyter Notebook
