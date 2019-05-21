@@ -1,6 +1,7 @@
 # Identify Customer Segments for Direct Marketing Campaigns
 
 ## Applying unsupervised learning techniques in [`scikit-learn`](https://scikit-learn.org/stable/)
+---
 
 > Example screen:
 
