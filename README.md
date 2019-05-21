@@ -2,6 +2,8 @@
 
 ## Applying unsupervised learning techniques in [`scikit-learn`](https://scikit-learn.org/stable/)
 
+> Example screen:
+
 <p align="center">
   <img src="clusters-count.png" width="512" alt="screen-shot" />
 </p>
