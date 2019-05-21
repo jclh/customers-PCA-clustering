@@ -1,48 +1,30 @@
-# Flower Image Classifier with [PyTorch](https://pypi.org/project/torch/0.1.2/)
+# Identify Customer Segments for Direct Marketing Campaigns
 
-## Application of neural networks for image classification—using [`torchvision`](https://pytorch.org/docs/0.3.0/torchvision/index.html)
-
-
-### Example of inference:
+## Applying unsupervised learning techniques in [`scikit-learn`](https://scikit-learn.org/stable/)
 
 <p align="center">
-  <img src="example_image/nb-screen-shot.png" width="512" alt="screen-shot" />
+  <img src="clusters-count.png" width="512" alt="screen-shot" />
 </p>
 
-This project is part of a [Udacity](https://www.udacity.com/) program: [Data Science degree, Project 2](https://github.com/udacity/DSND_Term1)
+This project is part of a [Udacity](https://www.udacity.com/) program: [Data Science degree, Project 3](https://github.com/udacity/DSND_Term1)
 
-The objective of this project is to build an application that can be trained on any set of labeled images, using tools in [PyTorch](https://pypi.org/project/torch/0.1.2/)
-
-The network instance in the Jupyter notebook is trained on flower images—[102 Category Flower Dataset](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html)—and provides predictions via a command line application. Below is an example of the type of images included in the dataset:
-
-<p align="center">
-  <img src="example_image/Flowers.png" width="512" alt="Example" />
-</p>
-
-The project in the Jupyter notebook is broken down into three main steps:
-
-1. Load and pre-process the image datasets
-2. Train the image classifier on the training dataset
-3. Use the trained classifier to predict flower-image categories
+The objective of this project is to apply unsupervised learning techniques to identify segments of the population that form the core customer base for a mail-order sales company in Germany. These segments can then be used to deploy direct marketing campaigns towards audiences that will have the highest expected rate of return. The data was provided by Udacity's partners at Bertelsmann [Arvato Analytics](https://www.arvato.com/in-en/about.html).
 
 Main files in the repository:
 
-- `flower-classifier-PyTorch.ipynb`: Jupyter notebook including main Python code used in developing the tool.
+- `Identify_Customer_Segments.ipynb`: Jupyter notebook including main Python code.
 
-- `model_functions.py`: Python module with functions needed for core tasks of the model: network architecture, building a classifier, training, validation, and prediction.
 
-- `train.py`: Python module to train a new network on a dataset and then save the model as a checkpoint.
+## Business motivation
 
-- `utility_fs_train.py`: Utility functions for `train.py`.
-
-- `predict.py`: Python module to predict flower category from image, along with the probability of that category.
-
-- `utility_fs_predict.py`: Utility functions for `predict.py`.
+Identify segments of the population, based on historical customer data, that form the core customer base for a mail-order sales company in Germany. These segments can then be used to deploy direct marketing campaigns towards specific audiences in the general population which will have the highest expected rate of return.
 
 
 ## Data Science motivation
 
-The objective of this project is to build an application that can be trained on any set of labeled images, using the tool in [PyTorch](https://pypi.org/project/torch/0.1.2/).
+Apply unsupervised learning tools included in [`scikit-learn`](https://scikit-learn.org/stable/) for dimensionality reduction and clustering:
+- [Principal component analysis (PCA)](https://scikit-learn.org/stable/modules/decomposition.html#decompositions)
+- [$K$-means](https://scikit-learn.org/stable/modules/clustering.html#k-means)
 
 
 ## Use Jupyter Notebook
@@ -58,43 +40,7 @@ Use the following installation steps:
 3. To run the notebook:
 
 ```bash
-jupyter notebook flower-classifier-PyTorch.ipynb
-```
-
-
-## Use `train.py`
-
-```bash
-python train.py <data_directory> \
-		--arch <network architecture> \
-		--save_dir <checkpoint directory> \
-		--learning_rate <learning rate> \
-		--hidden_units <units in hidden layer pre-classifier> \
-		--epochs <number of passes of the training data> \
-		--gpu
-```
-
-### Example of basic use:
-
-```bash
-python train.py flowers/ 
-```
-
-
-## Use `predict.py`
-
-```bash
-python predict.py <path to image> <checkpoint> \
-		--top_k <number of most likely classes> \
-		--category_names <mapping of categories to real names> \
-		--gpu
-```
-
-### Example of basic use:
-
-```bash
-python predict.py input_image checkpoint --top_k 3 --gpu \
-		--category_names cat_to_name.json
+jupyter notebook Identify_Customer_Segments.ipynb
 ```
 
 
@@ -107,25 +53,18 @@ python predict.py input_image checkpoint --top_k 3 --gpu \
 
 The Jupyter Notebook and the Python modules require the following Python libraries:
 
-- argparse
 - collections
-- json
 - matplotlib
 - numpy
-- os
 - pandas
-- PIL
-- random
+- seaborn
 - sklearn
-- sys
-- time
-- torch
-- torchvision
 
 
 ## Acknowledgments
 
-- [Udacity: Data Scientist Nanodegree program](https://www.udacity.com/course/data-scientist-nanodegree--nd025).
+- [Udacity: Data Scientist Nanodegree program](https://www.udacity.com/course/data-scientist-nanodegree--nd025)
+- Bertelsmann [Arvato Analytics](https://www.arvato.com/in-en/about.html): datasets
 - Jupyter Documentation: [Installing Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html)
 
 
@@ -139,7 +78,7 @@ jc.lopezh@gmail.com
 
 ## Contributing
 
-1. Fork it (https://github.com/jclh/image-classifier-PyTorch/fork)
+1. Fork it (https://github.com/jclh/customers-PCA-clustering/fork)
 2. Create your feature branch (git checkout -b feature/fooBar)
 3. Commit your changes (git commit -am 'Add some fooBar')
 4. Push to the branch (git push origin feature/fooBar)
