@@ -1,4 +1,4 @@
-# Identify Customers for Direct Marketing Campaigns
+# Identify Customers Segments for Marketing Campaigns
 
 ## Applying unsupervised learning techniques in [`scikit-learn`](https://scikit-learn.org/stable/)
 <br />
@@ -9,7 +9,7 @@
   <img src="clusters-count.png" width="512" alt="screen-shot" />
 </p>
 
-This project is part of a [Udacity](https://www.udacity.com/) program: [Data Science degree, Project 3](https://github.com/udacity/DSND_Term1)
+This project is part of a [Udacity](https://www.udacity.com/) program: [Data Science degree, Project 3](https://github.com/udacity/DSND_Term1).
 
 The objective of the project is to apply unsupervised learning techniques to identify segments of the population that form the core customer base for a mail-order sales company in Germany. These segments can then be used to deploy direct marketing campaigns towards audiences that will have the highest expected rate of return. The data was provided by Udacity's partners at Bertelsmann [Arvato Analytics](https://www.arvato.com/in-en/about.html).
 
