@@ -6,7 +6,8 @@
 > Example screen:
 
 <p align="center">
-  <img src="clusters-count.png" width="512" alt="screen-shot" />
+  <img src="k-means.png" width="512" alt="screen-shot" />
+  <img src="customer_segmentation.png" width="512" alt="screen-shot" />
 </p>
 
 This project is part of a [Udacity](https://www.udacity.com/) program: [Data Science degree, Project 3](https://github.com/udacity/DSND_Term1).
